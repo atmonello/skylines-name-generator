@@ -7,7 +7,7 @@
 </template>
 
 <style lang="less" scoped>
-@import "../assets/main.less";
+@import "../assets/vars.less";
 
 .panel {
   background: #fff;

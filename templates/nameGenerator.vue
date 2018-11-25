@@ -20,7 +20,7 @@
 </template>
 
 <style lang="less">
-@import "../assets/main.less";
+@import "../assets/vars.less";
 #nameGenerator {
   #generate {
     text-align: center;

@@ -5,7 +5,7 @@
 </template>
 
 <style lang="less" scoped>
-@import "../assets/main.less";
+@import "../assets/vars.less";
 
 #titleContainer {
   color: #eee;
