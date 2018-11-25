@@ -1,6 +1,7 @@
 <template>
   <section id="typeSelector">
     <panel>
+      <h2 slot="content">Definições</h2>
       <fieldset slot="content">
         <legend>Nome simples ou composto</legend>
         <div class="form-group">

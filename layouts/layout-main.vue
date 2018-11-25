@@ -20,8 +20,7 @@
 <style lang="less" scoped>
 #layout {
     background: #333333;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 
     #left, #right {
       margin-bottom: 20px;

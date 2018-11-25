@@ -20,14 +20,39 @@ body {
     user-select: none;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: @ftSizeTitle;
+  }
+
+  h2 {
+    font-size: @ftSizeSmallTitle;
+  }
+
   fieldset {
     legend {
       font-size: @ftSizeSmallTitle;
+      border-bottom: 1px solid @color5;
     }
   }
 
   label {
     font-size: @ftSizeLarge;
+  }
+
+  input {
+    &:disabled {
+      ~ .custom-control-label {
+        color: @color5;
+
+        &:before {
+          opacity: 0.35;
+        }
+      }
+    }
   }
 }
 

@@ -1,20 +1,33 @@
 <template>
   <section id="nameGenerator">
     <panel>
-      <fieldset id="debug" slot="content">
+      <!-- <fieldset id="debug" slot="content">
         <legend>Debug - APAGAR</legend>
         <p>Nome composto? {{ controls.composto }}</p>
         <p>Tipo de nome? {{ controls.tipo }}</p>
         <p>Prefixos? {{ controls.prefixos }}</p>
         <p>Sufixos? {{ controls.sufixos }}</p>
-      </fieldset>
-      <div v-show="controls.toggle" id="generate" slot="content">
+      </fieldset> -->
+      <div id="generate" slot="content">
         <h2>Nome gerado</h2>
-        <p>{{ content.generated.trim() }}</p>
+        <p v-show="controls.toggle">{{ content.generated.trim() }}</p>
       </div>
+      <ul slot="content" class="list-group">
+        <li v-for="(name, index) in content.previousNames" :key="index" class="list-group-item">{{ name }}</li>
+      </ul>
     </panel>
   </section>
 </template>
+
+<style lang="less">
+@import "../assets/main.less";
+#nameGenerator {
+  #generate {
+    text-align: center;
+  }
+}
+</style>
+
 
 <script>
 /* eslint-disable no-undef */
@@ -103,6 +116,8 @@ export default {
           }
         }
       }
+
+      self.content.previousNames.unshift(self.content.generated.trim());
     });
   },
 };
