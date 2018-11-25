@@ -64,4 +64,8 @@ module.exports = {
 
     },
   },
+
+  router: {
+    base: "/skylines-name-generator/",
+  },
 };
