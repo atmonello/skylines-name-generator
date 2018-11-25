@@ -1,22 +1,11 @@
-# skylines-name-generator
+# Skylines Name Generator
 
-> City and district name generator for Cities Skylines.
+> Gerador de nomes em Português-Brasileiro de cidades e bairros para jogos de simulação.
 
-## Build Setup
+## Autor
 
-``` bash
-# install dependencies
-$ npm install
+André Monello
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### Contato
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+atmonello [at] gmail.com

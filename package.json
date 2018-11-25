@@ -1,7 +1,7 @@
 {
   "name": "skylines-name-generator",
   "version": "1.0.0",
-  "description": "City and district name generator for Cities Skylines.",
+  "description": "Gerador de nomes para cidades e bairros.",
   "author": "Andre Monello",
   "private": true,
   "scripts": {

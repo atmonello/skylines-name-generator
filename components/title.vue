@@ -13,6 +13,7 @@
 
   h1 {
     font-size: @ftSizeTitle;
+    font-weight: bold;
     padding-top: 15px;
     padding-bottom: 15px;
   }
