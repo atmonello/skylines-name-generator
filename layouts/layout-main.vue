@@ -13,6 +13,11 @@
         <slot name="generator"></slot>
       </div>
     </div>
+    <div class="row">
+      <div id="footer" class="col-xs-12">
+        <slot name="footer"></slot>
+      </div>
+    </div>
   </div>
 
 </template>
@@ -25,12 +30,9 @@
     #left, #right {
       margin-bottom: 20px;
     }
+
+    #footer {
+      margin: 5px 0;
+    }
 }
-
 </style>
-
-<script>
-export default {
-
-};
-</script>
